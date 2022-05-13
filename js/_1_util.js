@@ -12,7 +12,7 @@ function ymd(result) {
 	let y = result.years;
 	let m = result.months;
 	let d = result.days;
-	return `${y}Y ${m < 10 ? "0" + m : m}M ${d < 10 ? "0" + d : d}D`;
+	return `${y}Y ${m}M ${d}D`;
 }
 
 function writeToTable(startDate, endDate, temporalDiff, fctemporalDiff, luxonDiff, third, isSame, bday) {
