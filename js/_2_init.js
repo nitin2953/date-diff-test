@@ -1,8 +1,5 @@
 start_input.value = "2022-01-31";
 end_input.value = "2022-02-28";
-document.onload = () => {
-	calcAge();
-}
 
 
 // local_date.textContent = "Your date format is " + new Date("2003-05-29").toLocaleDateString();
