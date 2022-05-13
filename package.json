@@ -1,0 +1,17 @@
+{
+  "name": "date-diff",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "rimraf dist && npx @11ty/eleventy --watch --incremental",
+    "serve": "rimraf dist && npx @11ty/eleventy --serve --incremental",
+    "build": "rimraf dist && npx @11ty/eleventy"
+  },
+  "author": "नितिन कुमार",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.10",
+    "dev-ip": "^1.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.51.0"
+  }
+}

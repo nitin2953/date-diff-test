@@ -1,0 +1,10 @@
+---
+permalink: "{{ page.fileSlug }}"
+---
+{% set scss %}
+	{% include "./_base.scss" %}
+	{% include "./_form.scss" %}
+	{% include "./_output.scss" %}
+{% endset %}
+
+{{ scss | sass | safe }}

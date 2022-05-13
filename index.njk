@@ -1,0 +1,72 @@
+<!--।। श्री ।।-->
+<!doctype html>
+<html lang="en-IN">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Kalc.Tools DateDiff Test</title>
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='100' height='100' fill='%23f00'/%3E%3Ctext x='-.06em' y='.97em' font-size='80'%3E✳️%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+	<link rel="stylesheet" href="/main.css">
+	<script type="module" src="/main.js"></script>
+</head>
+<body>
+	<header>
+		<details>
+			<summary>
+				<a href="https://kalc.tools" target="_blank">
+					<img decoding="sync" loading="eager" src="/logo.svg" width="108" height="40" alt="Kalc.Tools Logo" title="Backlink">
+				</a>
+			</summary>
+			<p>
+				<kbd>⇅</kbd> => <kbd>Enter</kbd> || <kbd>Spacebar</kbd> || <kbd>Left Click</kbd> = +1 day
+				<br>
+				<kbd>⇅</kbd> => <kbd>Shift</kbd> + (<kbd>Enter</kbd> || <kbd>Spacebar</kbd>) || <kbd>Right Click</kbd> = -1 day
+			</p>
+			<hr>
+			<p>
+				<kbd>🦀</kbd> => <kbd>Enter</kbd> || <kbd>Spacebar</kbd> || <kbd>Left Click</kbd> = <code>"tr:nth-child(15) ~ *".remove()</code>
+				<br>
+				<kbd>🦀</kbd> => <kbd>Shift</kbd> + (<kbd>Enter</kbd> || <kbd>Spacebar</kbd>) || <kbd>Right Click</kbd> = <code>"tr".remove()</code>
+			</p>
+		</details>
+	</header>
+
+	<div>
+		<samp id="local_date" title="Locale Date"></samp>
+		<form>
+			<label>Start Date<input type="date" id="start_input" required autofocus></label>
+			<label>End Date<input type="date" id="end_input" required></label>
+
+			<button type="button" id="start_oper" class="swap">⟵ ⟶</button>
+			<button type="button" id="end_oper" class="swap">⟵ ⟶</button>
+
+			<input type="submit" tabindex="-1">
+
+			<button type="button" id="trim" accesskey="c">🦀 Table</button>
+			<button type="button" id="swap" accesskey="x">🔁 Dates</button>
+		</form>
+	</div>
+
+	<output>
+
+		<table>
+			<thead>
+				<tr>
+					<th><code>startDate</code></th>
+					<th><code>endDate</code></th>
+					<th><code>Temporal</code></th>
+					<th><code>fcTemporal</code></th>
+					<th><code>r3</code></th>
+					<th><code>r4</code></th>
+					<th>⭕</th>
+					<th>🎂</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr></tr> -->
+			</tbody>
+		</table>
+
+	</output>
+</body>
+</html>
