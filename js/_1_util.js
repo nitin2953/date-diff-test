@@ -15,19 +15,20 @@ function ymd(result) {
 	return `${y}Y ${m}M ${d}D`;
 }
 
-function writeToTable(startDate, endDate, temporalDiff, fctemporalDiff, luxonDiff, third, isSame, bday) {
+function writeToTable(startDate, endDate, temporalDiff, fctemporalDiff, r3, r4, isSame, bday) {
 	return (`
-		<tr>
+		<tr class="${isSame}">
 			<td>${startDate}</td>
 			<td>${endDate}</td>
 			<td>${temporalDiff}</td>
 			<td>${fctemporalDiff}</td>
-			<td>${luxonDiff}</td>
-			<td class="${third}">${third}</td>
+			<td><code>${r3}</code></td>
+			<td>${r4}</td>
 			<td>${isSame}</td>
 			<td>${bday}</td>
 		</tr>
 	`)
+	// <td data-same="${isSame}">${isSame ? "🟩" : "🟥"}</td>
 }
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -77,4 +78,14 @@ function checkSame(value1, value2) {
 	value2 = value2.replace(/\s/g, "");
 	value2 = value2.replace(/-/g, "");
 	return value1 === value2 ? true : false;
+}
+
+
+// get total days in month from Date
+function totalDays(date) {
+	let tmp = new Date(date);
+	let y = tmp.getFullYear();
+	let m = tmp.getMonth();
+	let totalDays = new Date(y, m+1, 0).getDate();
+	return totalDays;
 }

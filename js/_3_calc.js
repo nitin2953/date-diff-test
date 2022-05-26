@@ -54,7 +54,8 @@ function calcAge() {
 
 		const R1 = ymd(Temporal_fun(startDate, endDate));
 		const r2 = ymd(fcTemporal_fun(startDate, endDate));
-		const r3 = "" /* ymd(luxon_fun(startDate, endDate)) */;
+		// const r3 = "" /* ymd(luxon_fun(startDate, endDate)) */;
+		const r3 = totalDays(endDate);
 		const r4 =  "" /* ymd(ZitRos_fun(startDate, endDate)) */;
 
 
