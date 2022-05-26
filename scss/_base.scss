@@ -40,7 +40,7 @@ html {
 	min-width: 320px;
 }
 
-html, body { height: 100vh }
+html, body { height: 100vh; height: 100dvh }
 
 body {
 	font-size: clamp(17.5px, calc(0.99rem + 0.34vw), 19px);//  17 (320) | 19 (900)
