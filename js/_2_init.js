@@ -10,10 +10,20 @@ function oper(e, element) {
 	if (!element.value) { element.focus(); return }
 
 	let date = element.valueAsDate;
-	if (e.shiftKey) date.setDate(date.getDate() - 1);
-	else date.setDate(date.getDate() + 1);
-	element.valueAsDate = date;
 
+	if (e.shiftKey) date.setDate(date.getDate() - 1);
+	else if (e.ctrlKey) {
+		let y = date.getFullYear();
+		let m = date.getMonth();
+		let totalDays = new Date(y, m+2, 0).getDate();
+
+		date.setDate(1)
+		date.setMonth(m+1);
+		date.setDate(totalDays);
+	}
+	else date.setDate(date.getDate() + 1);
+
+	element.valueAsDate = date;
 	calcAge();
 }
 
