@@ -9,15 +9,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.setServerOptions({
 		port: 5555,
-		showAllHosts: true,
-
-		// https: {
-		// 	key: "./localhost.key",
-		// 	cert: "./localhost.cert",
-		// },
-
-		// Change the name of the special folder name used for injected scripts
-		// folder: ".11ty",
+		showAllHosts: true
 	});
 	let devip = "http://" + devIp()[0] + ":5555";
 	if (devIp()[0]) { qrcode.generate(devip, { small: true }) }

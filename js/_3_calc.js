@@ -68,7 +68,7 @@ function calcAge() {
 		endDate = convertDateToString(endDate);
 
 
-		let content = writeToTable(startDate, endDate, R1, r2, r3, r4, isSame, isBDay);
+		let content = writeToTable(startDate, endDate, R1, r2, r3, isSame, isBDay);
 		table.insertAdjacentHTML("afterbegin", content);
 
 	}

@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
-	scrollbar-width: thin;
 	scrollbar-color: #ccc #fafafa;
 	overflow-anchor: auto;
 	-webkit-tap-highlight-color: transparent;
@@ -47,8 +46,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 30px;
-	padding-top: 30px;
+	gap: 25px;
+	padding-top: 20px;
 }
 
 kbd, pre, code, samp, textarea { font-family: "JetBrains Mono", "Segoe UI Emoji", monospace, "Inter"; }
@@ -140,7 +139,7 @@ details {
 	}
 }
 
-mark, samp, kbd, code, pre, details { border-radius: .4em }
+mark, samp, kbd, code, pre, details { border-radius: .3em }
 
 kbd, code, pre { background-color: #eee; }
 

@@ -15,7 +15,7 @@ function ymd(result) {
 	return `${y}Y ${m}M ${d}D`;
 }
 
-function writeToTable(startDate, endDate, temporalDiff, fctemporalDiff, r3, r4, isSame, bday) {
+function writeToTable(startDate, endDate, temporalDiff, fctemporalDiff, r3, isSame, bday) {
 	return (`
 		<tr class="${isSame}">
 			<td>${startDate}</td>
@@ -23,7 +23,6 @@ function writeToTable(startDate, endDate, temporalDiff, fctemporalDiff, r3, r4, 
 			<td>${temporalDiff}</td>
 			<td>${fctemporalDiff}</td>
 			<td><code>${r3}</code></td>
-			<td>${r4}</td>
 			<td>${isSame}</td>
 			<td>${bday}</td>
 		</tr>
